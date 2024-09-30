@@ -4,9 +4,40 @@ import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
+
+const schemamarkup = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Hvem opfandt surf rock?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: 'Surf rock blev populært i starten af 1960\'erne, men Dick Dale er ofte krediteret som genrens opfinder. Med sine innovative guitarteknikker og karakteristiske lyd satte han standarden for surf rock med sange som "Let’s Go Trippin’" og "Misirlou."',
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Hvad er surf rock?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Surf rock er en undergenre af rockmusik, der opstod i det sydlige Californien. Den er kendetegnet ved brugen af reverb-drenget elektrisk guitar, twangy melodier og energiske rytmer. Genren fremkalder billeder af strandliv og surfing og indeholder ofte både instrumentale numre og vokalnumre, der hylder surfkulturen.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Hvem er de mest populære og indflydelsesrige surf rockbands?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ud over Dick Dale er nogle af de mest populære surf rockbands The Beach Boys, The Ventures og The Surfaris. The Beach Boys er især kendt for deres harmonier og sangtekster, der fremhæver Californiens strandliv. The Ventures og The Surfaris bidrog også betydeligt til genrens udvikling med ikoniske instrumentale numre.",
+      },
+    },
+  ],
+};
 ---
 
-<MainLayout title="Titel">
+<MainLayout title="Surf Rock" description="En hjemmeside med der handler om hvad Surf Rock er, og dens historie" og:title="Surf Rock" og:description="Denne hjemmeside fortæller om Surf Rock og dens historie">
   <section class="grid mx-auto container gap-8 pt-8 prose">
     <article>
       <h1>Surf Rock</h1>
@@ -42,3 +73,4 @@ import thumbsup from "../assets/images/thumbsup.png";
     </article>
   </section>
 </MainLayout>
+<script type="application/ld+json" set:html={JSON.stringify(schemamarkup)} />
