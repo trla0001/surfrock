@@ -1,15 +1,44 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 ---
+
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+  <section>
+    <article>
+      <h1>Surf Rock</h1>
+      <p>Surf rock er en unik undergenre af rockmusik, der opstod i det sydlige Californien i slutningen af 1950'erne og starten af 1960'erne. Kendetegnet ved dens brug af reverb-tunge elektriske guitarer, twangy melodier og energiske, drivende rytmer, fremmaner surf rock straks billeder af bølger, sand og den solbeskinnede kystlinje. Genren balancerer ofte mellem instrumentale numre og sange med vokaler, der hylder strandlivet og Californien som et kulturelt epicenter for surfkulturen.</p>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <h1>Surf Rocks Oprindelse</h1>
+      <p>Surf rock opstod i det sydlige Californien, hvor rock 'n' roll blev påvirket af den lokale surfkultur og smeltede sammen med både mellemøstlige og mexicanske musiktraditioner. Det var et musikalsk udtryk for den fritidsorienterede surf-livsstil, der blomstrede på de californiske strande. Med denne lyd kunne man næsten høre bølgernes brusen, mens guitarernes staccato rytmer og rumklang satte stemningen for de uendelige sommerdage på stranden.</p>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <h1>Dick Dale: Kongen af Surf Guitar</h1>
+      <p>Dick Dale, også kendt som "Kongen af Surf Guitar", var den vigtigste pioner inden for surf rock-genren. Med sit innovative brug af staccato picking og reverb-effekter på guitaren skabte han en kraftfuld lyd, der lagde fundamentet for genren. Hans ikoniske sange som "Let’s Go Trippin’" og den græske-inspirerede "Misirlou" banede vejen for surf rockens popularitet. Dale var også kendt for at eksperimentere med guitarforstærkere, hvilket gav hans musik en rå og intens lyd, som mange surf rock bands efterfølgende forsøgte at efterligne.</p>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <h1>Genrens Fald og Genoplivning</h1>
+      <p>Surf rock oplevede sit højdepunkt i 1960'erne, men begyndte at miste popularitet i slutningen af årtiet, da musikscenen udviklede sig, og nye genrer som psykedelisk rock og folk tog over. Selvom genren for en tid gled ud af mainstream-musikken, oplevede den en genoplivning i 1990'erne, især efter Quentin Tarantino brugte "Misirlou" i sin kultfilm Pulp Fiction. Elementer af surf rock kan stadig høres i moderne musik i dag, både i retro-inspirerede bands og i populærkulturen.</p>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <h1>En central del af musikhistorien</h1>
+      <p>Selvom genren ikke længere er lige så dominerende som i 1960'erne, har dens indflydelse på musikkens udvikling været stor. Dens evne til at fremkalde en følelse af frihed, ungdom og ubekymrethed gør den til en central del af musikhistorien, og dens lyd vil for evigt være forbundet med Californien og den ikoniske surfkultur.</p>
+    </article>
+  </section>
 </MainLayout>
