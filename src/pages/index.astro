@@ -3,7 +3,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
-import thumbsup from "../assets/images/thumbsup.png";
+import surfing from "../assets/images/surfing.webp";
+import guitar from "../assets/images/guitar.webp";
 
 const schemamarkup = {
   "@context": "https://schema.org",
@@ -42,6 +43,7 @@ const schemamarkup = {
     <article>
       <h1>Surf Rock</h1>
       <p>Surf rock er en unik undergenre af rockmusik, der opstod i det sydlige Californien i slutningen af 1950'erne og starten af 1960'erne. Kendetegnet ved dens brug af reverb-tunge elektriske guitarer, twangy melodier og energiske, drivende rytmer, fremmaner surf rock straks billeder af bølger, sand og den solbeskinnede kystlinje. Genren balancerer ofte mellem instrumentale numre og sange med vokaler, der hylder strandlivet og Californien som et kulturelt epicenter for surfkulturen.</p>
+      <Image src={surfing} alt="Billede af en mand med et surfbræt på en strand" />
     </article>
   </section>
 
@@ -56,6 +58,7 @@ const schemamarkup = {
     <article>
       <h1>Dick Dale: Kongen af Surf Guitar</h1>
       <p>Dick Dale, også kendt som "Kongen af Surf Guitar", var den vigtigste pioner inden for surf rock-genren. Med sit innovative brug af staccato picking og reverb-effekter på guitaren skabte han en kraftfuld lyd, der lagde fundamentet for genren. Hans ikoniske sange som "Let’s Go Trippin’" og den græske-inspirerede "Misirlou" banede vejen for surf rockens popularitet. Dale var også kendt for at eksperimentere med guitarforstærkere, hvilket gav hans musik en rå og intens lyd, som mange surf rock bands efterfølgende forsøgte at efterligne.</p>
+      <Image src={guitar} alt="Billede af en elektrisk guitar" />
     </article>
   </section>
 
@@ -74,3 +77,7 @@ const schemamarkup = {
   </section>
 </MainLayout>
 <script type="application/ld+json" set:html={JSON.stringify(schemamarkup)} />
+
+<!-- Photo by <a href="https://unsplash.com/@dexezekiel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dex Ezekiel</a> on <a href="https://unsplash.com/photos/man-carrying-surfboard-on-seashore-689FRC-RtNk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+
+<!-- Photo by <a href="https://unsplash.com/@dylu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jacek Dylag</a> on <a href="https://unsplash.com/photos/brown-and-white-electric-guitar-71k2FbrLMjA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
